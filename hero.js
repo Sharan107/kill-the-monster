@@ -17,7 +17,7 @@ class Hero{
     }
 
     display(){
-    
-    image(this.x,this.y,this.r);
+    imageMode(CENTER);
+    image(this.image,this.x,this.y,300,200);
     }
 }
