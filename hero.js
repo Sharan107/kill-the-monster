@@ -3,7 +3,7 @@ class Hero{
     constructor(x,y,r){
 
     var options={
-        isStatic:false,
+        //isStatic:false,
         density:1,
         frictionAir:1
     }
@@ -17,7 +17,13 @@ class Hero{
     }
 
     display(){
+
+    var pos=this.body.position;
+
+    push()
+    translate(pos.x,pos.y);
     imageMode(CENTER);
-    image(this.image,this.x,this.y,300,200);
-    }
+    image(this.image,0,0,300,200);
+    pop() 
+}
 }

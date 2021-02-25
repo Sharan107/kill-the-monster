@@ -24,6 +24,8 @@ ground=new Ground(450,550,900,10);
 hero= new Hero(300,300,10);
 rope= new Rope(hero.body,{x:500,y:200});
 
+monster= new Monster(750,530,50,50);
+
 block= new Block(550,530);
 block2= new Block(550,500);
 block3= new Block(550,470);
@@ -89,6 +91,7 @@ function draw() {
   block24.display();
   block25.display();
   block26.display();
+  monster.display();
 
   Engine.run(engine);
 
