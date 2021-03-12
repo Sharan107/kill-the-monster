@@ -14,14 +14,12 @@ class Ground{
 	}
 	display()
 	{
-	var groundPos=this.body.position;		
-	push()
-	translate(groundPos.x, groundPos.y);
-	rectMode(CENTER)
-	fill("white");
-	rect(0,0,this.w, this.h);
-	pop()
-			
+		var groundPos=this.body.position;
+		 push() //translate(groundPos.x, groundPos.y); 
+		 rectMode(CENTER) 
+		 fill("white");
+		  rect(groundPos.x,groundPos.y,this.w, this.h);
+		   pop() 
 	}
 
 }

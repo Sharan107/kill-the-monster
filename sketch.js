@@ -21,40 +21,40 @@ function setup() {
   // create sprites here
 
 ground=new Ground(450,550,900,10);
-hero= new Hero(300,300,10);
+hero= new Hero(300,300,250); 
 rope= new Rope(hero.body,{x:500,y:200});
 
 monster= new Monster(750,530,50,50);
 
 block= new Block(550,530);
-block2= new Block(550,500);
-block3= new Block(550,470);
-block4= new Block(550,440);
-block5= new Block(550,410);
-block6= new Block(550,380);
-block7= new Block(550,350);
+block2= new Block(550,530);
+block3= new Block(550,530);
+block4= new Block(550,530);
+block5= new Block(550,530);
+block6= new Block(550,530);
+block7= new Block(550,530);
 
 block8= new Block(600,530);
-block9= new Block(600,500);
-block10= new Block(600,470);
-block11= new Block(600,440);
-block12= new Block(600,410);
-block13= new Block(600,380);
+block9= new Block(600,530);
+block10= new Block(600,530);
+block11= new Block(600,530);
+block12= new Block(600,530);
+block13= new Block(600,530);
 
 block14= new Block(650,530);
-block15= new Block(650,500);
-block16= new Block(650,470);
-block17= new Block(650,440);
-block18= new Block(650,410);
-block19= new Block(650,380);
-block20= new Block(650,350);
-block21= new Block(650,320);
+block15= new Block(650,530);
+block16= new Block(650,530);
+block17= new Block(650,530);
+block18= new Block(650,530);
+block19= new Block(650,530);
+block20= new Block(650,530);
+block21= new Block(650,530);
 
 block22= new Block(700,530);
-block23= new Block(700,500);
-block24= new Block(700,470);
-block25= new Block(700,440);
-block26= new Block(700,410);
+block23= new Block(700,530);
+block24= new Block(700,530);
+block25= new Block(700,530);
+block26= new Block(700,530);
 
 }
 
