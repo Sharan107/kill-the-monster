@@ -20,12 +20,6 @@ function setup() {
 
   // create sprites here
 
-ground=new Ground(450,550,900,10);
-hero= new Hero(300,300,250); 
-rope= new Rope(hero.body,{x:500,y:200});
-
-monster= new Monster(750,530,50,50);
-
 block= new Block(550,530);
 block2= new Block(550,530);
 block3= new Block(550,530);
@@ -56,14 +50,17 @@ block24= new Block(700,530);
 block25= new Block(700,530);
 block26= new Block(700,530);
 
+ground=new Ground(450,550,900,10);
+hero= new Hero(300,300,250); 
+rope= new Rope(hero.body,{x:500,y:200});
+
+monster= new Monster(750,530,50,50);
+
+
 }
 
 function draw() {
   background(backgroundImg);
-
-  ground.display();
-  hero.display();
-  rope.display();
 
   block.display();
   block2.display();
@@ -90,7 +87,10 @@ function draw() {
   block23.display();
   block24.display();
   block25.display();
-  block26.display();
+  block26.display()
+  ground.display();
+  hero.display();
+  rope.display();
   monster.display();
 
   Engine.run(engine);
