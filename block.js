@@ -9,7 +9,7 @@ var options={
     friction:1.0
 }
 
-this.body=Bodies.rectangle(x,y,30,30,options);
+this.body=Bodies.rectangle(x,y,50,50,options);
 this.x=x;
 this.y=y;
 World.add(world,this.body);
@@ -26,7 +26,7 @@ display(){
      strokeWeight(4);
      stroke("black"); 
      fill("red");
-     rect(0, 0,30,30);
+     rect(0, 0,50,50);
      pop();
 }
 

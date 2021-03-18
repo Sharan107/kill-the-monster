@@ -15,6 +15,6 @@ class Monster{
     display(){
 
       imageMode(CENTER);
-      image(this.image,this.x,this.y,this.width,this.height);   
+      image(this.image,this.body.x,this.body.y,this.body.width,this.body.height);   
     }
 }

@@ -20,35 +20,35 @@ function setup() {
 
   // create sprites here
 
-block= new Block(550,530);
-block2= new Block(550,530);
-block3= new Block(550,530);
-block4= new Block(550,530);
-block5= new Block(550,530);
-block6= new Block(550,530);
-block7= new Block(550,530);
+  box1 = new Block(600, 100, 40, 40); 
+  box2 = new Block(900, 150, 40, 40); 
+  box3 = new Block(900, 200, 40, 40); 
+  box4 = new Block(900, 250, 40, 40); 
+  box5 = new Block(900, 300, 40, 40); 
+  box6 = new Block(900, 350, 40, 40); 
+  box7 = new Block(800, 400, 40, 40); 
 
-block8= new Block(600,530);
-block9= new Block(600,530);
-block10= new Block(600,530);
-block11= new Block(600,530);
-block12= new Block(600,530);
-block13= new Block(600,530);
+  box8 = new Block(800, 100, 40, 40); 
+  box9 = new Block(800, 150, 40, 40); 
+  box10 = new Block(800, 200, 40, 40); 
+  box11 = new Block(800, 250, 40, 40); 
+  box12 = new Block(800, 300, 40, 40); 
+  box13 = new Block(800, 350, 40, 40); 
 
-block14= new Block(650,530);
-block15= new Block(650,530);
-block16= new Block(650,530);
-block17= new Block(650,530);
-block18= new Block(650,530);
-block19= new Block(650,530);
-block20= new Block(650,530);
-block21= new Block(650,530);
+  box14 = new Block(800, 100, 40, 40); 
+  box15 = new Block(700, 150, 40, 40); 
+  box16 = new Block(700, 200, 40, 40); 
+  box17 = new Block(700, 250, 40, 40); 
+  box18 = new Block(700, 300, 40, 40); 
+  box19 = new Block(700, 350, 40, 40); 
+  box20 = new Block(700, 400, 40, 40); 
+  box21 = new Block(600, 450, 40, 40); 
 
-block22= new Block(700,530);
-block23= new Block(700,530);
-block24= new Block(700,530);
-block25= new Block(700,530);
-block26= new Block(700,530);
+  box22 = new Block(600, 100, 40, 40); 
+  box23 = new Block(600, 150, 40, 40); 
+  box24 = new Block(600, 200, 40, 40); 
+  box25 = new Block(600, 250, 40, 40);
+  box26 = new Block(600, 300, 40, 40);
 
 ground=new Ground(450,550,900,10);
 hero= new Hero(300,300,250); 
@@ -62,41 +62,41 @@ monster= new Monster(750,530,50,50);
 function draw() {
   background(backgroundImg);
 
-  block.display();
-  block2.display();
-  block3.display();
-  block4.display();
-  block5.display();
-  block6.display();
-  block7.display();
-  block8.display();
-  block9.display();
-  block10.display();
-  block11.display();
-  block12.display();
-  block13.display();
-  block14.display();
-  block15.display();
-  block16.display();
-  block17.display();
-  block18.display();
-  block19.display();
-  block20.display();
-  block21.display();
-  block22.display();
-  block23.display();
-  block24.display();
-  block25.display();
-  block26.display()
+  box1.display();
+  box2.display();
+  box3.display();
+  box4.display();
+  box5.display();
+  box6.display();
+  box7.display();
+  box8.display();
+  box9.display();
+  box10.display();
+  box11.display();
+  box12.display();
+  box13.display();
+  box14.display();
+  box15.display();
+  box16.display();
+  box17.display();
+  box18.display();
+  box19.display();
+  box20.display();
+  box21.display();
+  box22.display();
+  box23.display();
+  box24.display();
+  box25.display();
+  box26.display()
   ground.display();
   hero.display();
   rope.display();
   monster.display();
 
   Engine.run(engine);
-
+  
 }
 
 function mouseDragged(){
-  Body.setPosition(hero.body,{x:mouseX,y:mouseY});
+  Matter.Body.setPosition(hero.body,{x:mouseX,y:mouseY});
 }
