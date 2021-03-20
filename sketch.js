@@ -50,11 +50,11 @@ function setup() {
   box25 = new Block(600, 250, 40, 40);
   box26 = new Block(600, 300, 40, 40);
 
-ground=new Ground(450,550,900,10);
+  ground=new Ground(450,550,1200,10);
 hero= new Hero(300,300,250); 
 rope= new Rope(hero.body,{x:500,y:200});
 
-monster= new Monster(750,530,50,50);
+monster= new Monster(750,530,5,5);
 
 
 }
@@ -93,7 +93,7 @@ function draw() {
   rope.display();
   monster.display();
 
-  Engine.run(engine);
+  Engine.update(engine); 
   
 }
 
