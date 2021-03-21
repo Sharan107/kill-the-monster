@@ -54,7 +54,7 @@ function setup() {
 hero= new Hero(300,300,250); 
 rope= new Rope(hero.body,{x:500,y:200});
 
-monster= new Monster(750,530,5,5);
+monster= new Monster(1000,530,150,150);
 
 
 }
